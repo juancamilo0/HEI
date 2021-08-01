@@ -5,37 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Herramienta de Educacion Inteligente</title>
-</head>
-<h1>
-    Notas del Trimestre
-</h1>
-<body>
-    <form action="ejemplo.php" method="get">
-        <p>Nombre: <input type="text" name="nombre" size="40" placeholder="Escriba su Nombre"></p>
-        <p>Apellidos:
-            <input type="text" name="apellidos" size="40" placeholder="Escriba sus dos apellidos">
-          </p>
-          <p>
+    <link rel="stylesheet" href="style.css">
 
-          </p>
-         <div class="Notas">
-          <p>  Escriba la primera nota:
-            <input type="number1" name="numero1" step="any"></p>
-           <p> Escriba la segunda nota:
-            <input type="number2" name="numero2" step="any"></p>
-           <p> Escriba tercera nota:
-            <input type="number3" name="numero3" step="any"></p>
-            <p>Escriba cuarta nota:
-            <input type="number4" name="numero4" step="any"></p>
-            <p>Escriba quinta nota:
-            <input type="number5" name="numero5" step="any"></p>
-         </p> 
-        </div>
-       <div class="Enviar">
-        <p>
-          <input type="submit" value="Enviar">
-        </p>
-        </div> 
-      </form>
+
+</head>
+<body>
+
+<form action="#" target="" method="get" name="formDatosPersonales">
+
+	<label for="nombre">Nombre</label>
+	<input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
+
+	<label for="apellidos">Apellidos</label>
+	<input type="text" name="apellidos" id="apellidos" placeholder="1r Apellido"/>
+
+	<label for="nota 1" >Nota 1</label>
+	<input type="nota 1" name="nota 1" id="nota 1" placeholder="Nota 1" required />
+  <label for="nota 2" >Nota 2</label>
+	<input type="nota 2" name="nota 2" id="nota 2" placeholder="Nota 2" required />
+  <label for="nota 3" >Nota 3</label>
+	<input type="nota 3" name="nota 3" id="nota 3" placeholder="Nota 3" required />
+  <label for="nota 4" >Nota 4</label>
+	<input type="nota 4" name="nota 4" id="nota 4" placeholder="Nota 4" required />
+  <label for="nota 5" >Nota 5</label>
+	<input type="nota 5" name="nota 5" id="nota 5" placeholder="Nota 5" required />
+  <input type="submit" name="enviar" value="Enviar Datos"/>
+  <p id="p-result">Resultado...</p>
+  <script src="promedio.js"></script>
+</form>
+
 </body>
 </html>
